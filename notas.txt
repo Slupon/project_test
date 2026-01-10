@@ -4,4 +4,14 @@ Modulo 2 --> requirements.txt (a partir pipreqs!!, pip list, pip freeze!!!)
 Modulo 4 --> launch.json + archivos .py + folder data
 Modulo 2 --> environment.yaml (a partir conda list)
 
-Faltara añadir en README (esquema) lo de .vscode --> launch.json
+- Faltara añadir en README (esquema) lo de .vscode --> launch.json
+- Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 
+(ya sea para runear desde terminal, desde debugger o lo que sea)!!!!)
+- Recordar ir actualizando requirements.txt con pip freeze o pipreqs
+- Siempre ejecutar pip install -e . desde el root para adquirir packages (carpeto con _init__.py vacio) y requirements
+- La carpeta que contiene _init__.py quiere decir que los archivos son packages y cuyas funciones/classes son modulos. Entonces en nuestro caso hariamos:
+from project_test.package (el nombre archivo) import module (nombre funcion, classe dentro de ese archivo)
+- if __name__ == "__main__":
+    typer.run(evaluate)
+    Lo que hace esto es que ademas de definir funciones/modulos en ese archivo, al hacer python archivo.py tambien se ejecute la funcion, sino habria que crear otro
+    archivo que hiciera referencia a este archivo y fuera un output
