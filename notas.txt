@@ -3,6 +3,7 @@ Modulo 6 --> pyproject.toml (tambien mirar requirements modulo 2)
 Modulo 2 --> requirements.txt (a partir pipreqs!!, pip list, pip freeze!!!)
 Modulo 4 --> launch.json + archivos .py + folder data
 Modulo 2 --> environment.yaml (a partir conda list)
+Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject y diferentes reglas etc)
 
 - Faltara añadir en README (esquema) lo de .vscode --> launch.json
 - Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 

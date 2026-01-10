@@ -1,6 +1,7 @@
 import torch
 import typer
 
+
 def normalize(images: torch.Tensor) -> torch.Tensor:
     """Normalize images."""
     return (images - images.mean()) / images.std()

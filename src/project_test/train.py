@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import torch
 import typer
+
 from project_test.data import corrupt_mnist
 from project_test.model import MyAwesomeModel
 
@@ -8,7 +9,19 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.ba
 
 
 def train(lr: float = 1e-3, batch_size: int = 32, epochs: int = 10) -> None:
-    """Train a model on MNIST."""
+    '''
+    Train a neural network on the MNIST dataset and save the trained model
+    together with training statistics.
+
+            Parameters:
+                    lr (float): Learning rate used by the optimizer.
+                    batch_size (int): Number of samples per training batch.
+                    epochs (int): Number of full passes over the training dataset.
+
+            Returns:
+                    None: The function saves the trained model weights to disk
+                          and stores training loss and accuracy plots.
+    '''
     print("Training day and night")
     print(f"{lr=}, {batch_size=}, {epochs=}")
 
