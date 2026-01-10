@@ -3,7 +3,8 @@ Modulo 6 --> pyproject.toml (tambien mirar requirements modulo 2)
 Modulo 2 --> requirements.txt (a partir pipreqs!!, pip list, pip freeze!!!)
 Modulo 4 --> launch.json + archivos .py + folder data
 Modulo 2 --> environment.yaml (a partir conda list)
-Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject y diferentes reglas etc)
+Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject 
+y diferentes reglas etc para styling) + mypy (typing: comprobar que tingui sentit)
 
 - Faltara añadir en README (esquema) lo de .vscode --> launch.json
 - Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 
@@ -16,3 +17,5 @@ from project_test.package (el nombre archivo) import module (nombre funcion, cla
     typer.run(evaluate)
     Lo que hace esto es que ademas de definir funciones/modulos en ese archivo, al hacer python archivo.py tambien se ejecute la funcion, sino habria que crear otro
     archivo que hiciera referencia a este archivo y fuera un output
+- Deberiamos añadir más rules en ruff (modulo 7)
+- En gitignore, nse si deberiamos procurar que los archivos que se crean al ejecutar data.py y train.py, etc, deberian ser puestos alli
