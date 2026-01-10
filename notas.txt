@@ -1,0 +1,5 @@
+Repo experimental pel projecte de veritat, contenint arxius necessaris i format adient
+Modulo 6 --> pyproject.toml (tambien mirar requirements modulo 2)
+Modulo 2 --> requirements.txt (a partir pipreqs!!, pip list, pip freeze!!!)
+Modulo 4 --> launch.json + archivos .py + folder data
+Modulo 2 --> environment.yaml (a partir conda list)

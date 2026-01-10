@@ -3,11 +3,11 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "project_etest"
+name = "project_test"
 version = "0.0.1"
 description = "Simulation of the project of the course MLops"
 authors = [
-  { name = "Slupon", email = "your@email.com" },
+  { name = "Slupon", email = "sergi.luponsantacana@gmail.com" },
 ]
 
 keywords = ["machine learning", "MLOps"]
