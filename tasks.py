@@ -3,7 +3,7 @@ import os
 from invoke import Context, task
 
 WINDOWS = os.name == "nt"
-PROJECT_NAME = "project_etest"
+PROJECT_NAME = "project_test"
 PYTHON_VERSION = "3.12"
 
 # Setup commands
