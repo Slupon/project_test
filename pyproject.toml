@@ -22,6 +22,7 @@ dynamic = ["dependencies", "optional-dependencies"]
 train = "project_test.train:main"
 evaluate = "project_test.evaluate:main"
 visualize = "project_test.visualize:main"
+greetings = "project_test.iris_classifier:app"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
