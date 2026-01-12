@@ -9,7 +9,6 @@ description = "Simulation of the project of the course MLops"
 authors = [
   { name = "Slupon", email = "sergi.luponsantacana@gmail.com" },
 ]
-
 keywords = ["machine learning", "MLOps"]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -19,6 +18,11 @@ readme = "README.md"
 requires-python = ">=3.12"
 dynamic = ["dependencies", "optional-dependencies"]
 
+[project.scripts]
+train = "project_test.train:main"
+evaluate = "project_test.evaluate:main"
+visualize = "project_test.visualize:main"
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
@@ -27,7 +31,6 @@ dev = {file = ['requirements_dev.txt']}
 
 [tool.ruff]
 line-length = 120
-
 
 [tool.ruff.lint]
 select = ["I", "N", "E", "W", ]

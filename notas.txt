@@ -6,6 +6,8 @@ Modulo 2 --> environment.yaml (a partir conda list)
 Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject 
 y diferentes reglas etc para styling) + mypy (typing: comprobar que tingui sentit)
 Modulo 8 --> dvc + googlecloud (guardar data alli) + gdown (descarregar data de altres drives)
+Modulo 9 --> Hacer que se pueda ejecutar "train" así tal cual en terminal e.g. (usando [project.scripts]
+train = "my_project.train:main" en pyproject). Tambien se puede seguir usando python archivo.py o con el debugger
 
 - Faltara añadir en README (esquema) lo de .vscode --> launch.json
 - Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 
