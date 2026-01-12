@@ -3,3 +3,6 @@
 ['remote "storage"']
     url = gdrive://1u1RiCbM3hJa332mIul0Fz1HUBwhfowNm
     gdrive_use_service_account = false
+<<<<<<< HEAD
+=======
+>>>>>>> 1e6edbe (eliminar contraseñas y usuario de config por privacidad)
