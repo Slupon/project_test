@@ -1,6 +1,7 @@
 {
     "name": "my_working_env",
     "dockerFile": "Dockerfile",
+    "context": "..",
     "postCreateCommand": "bash .devcontainer/post_create.sh",
     "customizations": {
         "vscode": {
