@@ -9,6 +9,18 @@ Modulo 8 --> dvc (mirar tema contraseñas, permisos, arxiu config, valorar si cr
 Modulo 9 --> Hacer que se pueda ejecutar "train" así tal cual en terminal e.g. (usando [project.scripts]
 train = "my_project.train:main" en pyproject). Tambien se puede seguir usando python archivo.py o con el debugger
 + invoke (crear nuevas taks --> evitar mencionar docker python y acortar codigos)
+Modulo 10 --> Docker (docker built: crear imagen + docker run: crear contenedor a partir imagen y train.dockerfile + docker cd/docker run -v: copiar archivos entre
+contenedor y máquina)
+
+Contenedor → host
+docker cp experiment1:/models/model.pth ./models/model.pth
+Host → contenedor
+docker cp ./models/model.pth experiment1:/models/model.pth
+
+BIDIRECCIONAL (SINCRONIZACION CONSTANTE)
+docker run --name experiment1 -v "$(pwd)/models:/models" train:latest
+
+
 
 - Faltara añadir en README (esquema) lo de .vscode --> launch.json
 - Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 
