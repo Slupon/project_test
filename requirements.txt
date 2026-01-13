@@ -3,3 +3,4 @@ typer==0.15.2
 fastapi==0.115.12
 uvicorn==0.34.2
 matplotlib==3.9.0
+dvc[gdrive]==3.66.1

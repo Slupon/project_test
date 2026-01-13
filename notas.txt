@@ -10,7 +10,9 @@ Modulo 9 --> Hacer que se pueda ejecutar "train" así tal cual en terminal e.g. 
 train = "my_project.train:main" en pyproject). Tambien se puede seguir usando python archivo.py o con el debugger
 + invoke (crear nuevas taks --> evitar mencionar docker python y acortar codigos)
 Modulo 10 --> Docker (docker built: crear imagen + docker run: crear contenedor a partir imagen y train.dockerfile + docker cd/docker run -v: copiar archivos entre
-contenedor y máquina)
+contenedor y máquina) en /dockerfiles + /.devcontainers (abrir VSC en modo dev-container despues de crear archivo.
+Nombre archivo ha de ser 100% devcontainer.json --> quizas hay que actualizarlo con devcontainer_cookie.json) -->
+Dev Container: Rebuild and Reopen in Container (to enter in this mode)
 
 Contenedor → host
 docker cp experiment1:/models/model.pth ./models/model.pth
