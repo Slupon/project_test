@@ -3,16 +3,21 @@ Modulo 6 --> pyproject.toml (tambien mirar requirements modulo 2) + invoke (usan
 Modulo 2 --> requirements.txt (a partir pipreqs!!, pip list, pip freeze!!!)
 Modulo 4 --> launch.json + archivos .py + folder data
 Modulo 2 --> environment.yaml (a partir conda list)
-Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject 
+Modulo 7 --> codi ben documentat (comments, docstrings) + ruff (para ser pep8 compliant, explica como configurar ruff en pyproject
 y diferentes reglas etc para styling) + mypy (typing: comprobar que tingui sentit)
 Modulo 8 --> dvc (mirar tema contraseñas, permisos, arxiu config, valorar si crear service account, etc) + googlecloud (guardar data alli) + gdown (descarregar data de altres drives)
 Modulo 9 --> Hacer que se pueda ejecutar "train" así tal cual en terminal e.g. (usando [project.scripts]
 train = "my_project.train:main" en pyproject). Tambien se puede seguir usando python archivo.py o con el debugger
-+ invoke (crear nuevas taks --> evitar mencionar docker python y acortar codigos)
++ app.command (ver ejemplo creado con iris_classifier.py. Diferencia con typer normal: permite entrar varios comandos) + invoke (crear nuevas taks --> evitar mencionar docker python y acortar codigos)
 Modulo 10 --> Docker (docker built: crear imagen + docker run: crear contenedor a partir imagen y train.dockerfile + docker cd/docker run -v: copiar archivos entre
 contenedor y máquina) en /dockerfiles + /.devcontainers (abrir VSC en modo dev-container despues de crear archivo.
 Nombre archivo ha de ser 100% devcontainer.json --> quizas hay que actualizarlo con devcontainer_cookie.json) -->
 Dev Container: Rebuild and Reopen in Container (to enter in this mode)
+· Modulo 11 --> Hydra (crear en configs/config.yaml para almacenar hyperparametros de train.py etc --> Falta hacerlo) --> Hydra es como el substituto de typer
+para evitar tener que entrar argumentos en terminal (y solo cambiar archivo yaml; y guarda configuraciones automaticamente en carpeta
+creado automaticamente "outputs"!!!!! --> valorar si poner en .gitignore, en teoria si) + logging (simplemente canviem print per log.info i s'emmagatzema
+a outputs tmb) + instantiate. Que faria jo: aniria emmagatzemant resultats (imatges i model) a outputs per cada run i, amb el definitiu, llavors els posaria
+a models i reports. Tambe mirar final exercise per distribucio --> Mirar chat codex: "Fix missing pre-commit issue" !!
 
 Contenedor → host
 docker cp experiment1:/models/model.pth ./models/model.pth
@@ -25,7 +30,7 @@ docker run --name experiment1 -v "$(pwd)/models:/models" train:latest
 
 
 - Faltara añadir en README (esquema) lo de .vscode --> launch.json
-- Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante 
+- Tambien poner en README.md como hay que ejecutar cada cosa (explicar invoke para train, opcion debugger, hay que estar en carpeta root del repo muy importante
 (ya sea para runear desde terminal, desde debugger o lo que sea)!!!!)
 - Para invoke, recordar añadir tasks en proyecto para hacer mas facil ejecucion de modulos/ficheros etc (modulo 6 + 9)
 - Recordar ir actualizando requirements.txt con pip freeze o pipreqs
@@ -38,3 +43,4 @@ from project_test.package (el nombre archivo) import module (nombre funcion, cla
     archivo que hiciera referencia a este archivo y fuera un output
 - Deberiamos añadir más rules en ruff (modulo 7)
 - En gitignore, nse si deberiamos procurar que los archivos que se crean al ejecutar data.py y train.py, etc, deberian ser puestos alli
+- Falta sobre modulo 11, crear config.yaml
