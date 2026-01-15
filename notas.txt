@@ -18,6 +18,8 @@ para evitar tener que entrar argumentos en terminal (y solo cambiar archivo yaml
 creado automaticamente "outputs"!!!!! --> valorar si poner en .gitignore, en teoria si) + logging (simplemente canviem print per log.info i s'emmagatzema
 a outputs tmb) + instantiate. Que faria jo: aniria emmagatzemant resultats (imatges i model) a outputs per cada run i, amb el definitiu, llavors els posaria
 a models i reports. Tambe mirar final exercise per distribucio --> Mirar chat codex: "Fix missing pre-commit issue" !!
+· Modulo 12 --> Debugging per trobar errors (maxim pot ser ajuda per launch.json)
+· Modulo 13 --> Profiling (per enseñar stats temps: snakeviz)
 
 Contenedor → host
 docker cp experiment1:/models/model.pth ./models/model.pth
