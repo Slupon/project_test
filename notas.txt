@@ -19,7 +19,12 @@ creado automaticamente "outputs"!!!!! --> valorar si poner en .gitignore, en teo
 a outputs tmb) + instantiate. Que faria jo: aniria emmagatzemant resultats (imatges i model) a outputs per cada run i, amb el definitiu, llavors els posaria
 a models i reports. Tambe mirar final exercise per distribucio --> Mirar chat codex: "Fix missing pre-commit issue" !!
 · Modulo 12 --> Debugging per trobar errors (maxim pot ser ajuda per launch.json)
-· Modulo 13 --> Profiling (per enseñar stats temps: snakeviz)
+· Modulo 13 --> Profiling (per enseñar stats temps: snakeviz). PYTORCH (trace.json anarlo guardant
+a carpeta outputs que es crea al hydra. Un cop tinguem model final, ho copiem a carpetes definitives
+que si que es pugen a git). Per obrir trace.json fer chrome://tracing i load arxiu. Per treball, podem crear
+tant arxiu .prof per despres snakeviz (aixo nomes manualment amb terminal
+en el model definitiu); y sobretot trace.json per pytorch (aixo implementat dins
+de hydra y del train.py). Tensorboard (complement a Pytorch important)-->  http://localhost:6006/#pytorch_profiler
 
 Contenedor → host
 docker cp experiment1:/models/model.pth ./models/model.pth
@@ -46,3 +51,5 @@ from project_test.package (el nombre archivo) import module (nombre funcion, cla
 - Deberiamos añadir más rules en ruff (modulo 7)
 - En gitignore, nse si deberiamos procurar que los archivos que se crean al ejecutar data.py y train.py, etc, deberian ser puestos alli
 - Falta sobre modulo 11, crear config.yaml
+- Crear canvas (inicio)
+- Modul 13 --> Crear pytorch(profiler) per train.py i diferent arxius (veure s4/simple_profiler i vae_mnist_pytorch_profiler_solution.py)
